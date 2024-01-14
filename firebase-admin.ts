@@ -7,7 +7,7 @@ if (!admin.app.length) {
   app = admin.initializeApp({
     credential: admin.credential.cert({
       projectId: "ganchat-dd078",
-      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+      clientEmail: "firebase-adminsdk-y14u0@ganchat-dd078.iam.gserviceaccount.com",
       privateKey: process.env.FIREBASE_PRIVATE_KEY,
     }),
   });
