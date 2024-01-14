@@ -8,8 +8,8 @@ export const nextAuthOptions: NextAuthOptions = {
   adapter: FirestoreAdapter(adminDB),
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID || "",
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
+      clientId: process.env.GOOGLE_CLIENT_ID || "412323530937-a84prdlqr6f2q3ebd83tms02rpcd2mv5.apps.googleusercontent.com",
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET || "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",
     }),
   ],
   callbacks: {
