@@ -6,7 +6,7 @@ let app;
 if (!admin.app.length) {
   app = admin.initializeApp({
     credential: admin.credential.cert({
-      projectId: process.env.FIREBASE_PROJECT_ID,
+      projectId: "ganchat-dd078",
       clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
       privateKey: process.env.FIREBASE_PRIVATE_KEY,
     }),
@@ -15,7 +15,7 @@ if (!admin.app.length) {
 
 const adminDB = initFirestore({
   credential: admin.credential.cert({
-    projectId: process.env.FIREBASE_PROJECT_ID,
+    projectId: "ganchat-dd078",
     clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
     privateKey: process.env.FIREBASE_PRIVATE_KEY,
   }),
