@@ -8,7 +8,7 @@ if (!admin.app.length) {
     credential: admin.credential.cert({
       projectId: "ganchat-dd078",
       clientEmail: "firebase-adminsdk-y14u0@ganchat-dd078.iam.gserviceaccount.com",
-      privateKey: process.env.FIREBASE_PRIVATE_KEY,
+      privateKey: JSON.parse(process.env.FIREBASE_PRIVATE_KEY),
     }),
   });
 }
@@ -17,7 +17,7 @@ const adminDB = initFirestore({
   credential: admin.credential.cert({
     projectId: "ganchat-dd078",
     clientEmail: "firebase-adminsdk-y14u0@ganchat-dd078.iam.gserviceaccount.com",
-    privateKey: process.env.FIREBASE_PRIVATE_KEY,
+    privateKey: JSON.parse(process.env.FIREBASE_PRIVATE_KEY),
   }),
 });
  
